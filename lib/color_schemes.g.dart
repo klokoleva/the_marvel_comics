@@ -93,6 +93,12 @@ TextStyle headlineStyle = GoogleFonts.marvel(
     color: Colors.white,
   ),
 );
+TextStyle subHeadlineStyle = GoogleFonts.marvel(
+  textStyle: TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  ),
+);
 
 TextStyle titleStyle = GoogleFonts.coveredByYourGrace(
   textStyle: TextStyle(

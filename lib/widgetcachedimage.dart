@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:the_marvel_comics/model/charactermodel.dart';
 import 'package:the_marvel_comics/widgetlottie.dart';
 
-Widget cachednetwork(Thumbnail thumbnail) {
+Widget cachednetwork(Thumbnail thumbnail, {double? width, double? height}) {
   return CachedNetworkImage(
     imageUrl: '${thumbnail.path}.${thumbnail.extension}',
     imageBuilder: (context, imageProvider) => Container(
+      width: width,
+      height: height,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: imageProvider,
